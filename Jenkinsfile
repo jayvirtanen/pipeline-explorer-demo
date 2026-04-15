@@ -25,12 +25,6 @@ pipeline {
                 junit 'mock-junit.xml'
             }
         }
-        stage('Trigger Related Build')
-        {
-            steps{
-                build wait: false, propagate: false, job: 'hello'
-            }
-        }
         stage('Create Artifact')
         {
             steps{
