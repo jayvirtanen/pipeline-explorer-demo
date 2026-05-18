@@ -28,8 +28,8 @@ pipeline {
         stage('Create Artifact')
         {
             steps{
-                sh 'touch artifact.txt'
-                archiveArtifacts 'artifact.txt'
+                sh 'touch artifact1.txt'
+                archiveArtifacts 'artifact1.txt'
             }
         }
         stage('Skipped Stage 1') {
